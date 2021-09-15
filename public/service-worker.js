@@ -10,6 +10,8 @@ const STATIC_FILES_TO_CACHE = [
 	"/assets/css/styles.css",
 	"/assets/icons/icon-192x192.png",
 	"/assets/icons/icon-512x512.png",
+	"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+	"https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
 ];
 
 // Add new files to cache
@@ -47,8 +49,26 @@ self.addEventListener("activate", function (event) {
 	);
 });
 
-// handle offline requests
+// Handle offline requests
 self.addEventListener("fetch", function (event) {
+	if (event.request.url.includes("/api/")) {
+		event.respondWith(
+			caches.open(DATA_CACHE_NAME).then(function (cache) {
+				return fetch(event.request)
+					.then(function (response) {
+						if (response.status === 2000) {
+							cache.put(event.request.url, response.clone());
+						}
+						return response;
+					})
+					.catch(function () {
+						return cache.match(event.request);
+					});
+			})
+		);
+		return;
+	}
+
 	event.respondWith(
 		caches.open(STATIC_CACHE_NAME).then(function (cache) {
 			return cache.match(event.request).then(function (response) {
