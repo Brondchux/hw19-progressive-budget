@@ -8,15 +8,15 @@ This is a Progressive Web Application (PWA). This application provides the user 
 
 ## Table of Content
 
-1. [Project Description](https://github.com/Brondchux/hw18-fitness-tracker#project-description)
-2. [Author Info](https://github.com/Brondchux/hw18-fitness-tracker#author-info)
-3. [User Story](https://github.com/Brondchux/hw18-fitness-tracker#user-story)
-4. [Acceptance Criteria](https://github.com/Brondchux/hw18-fitness-tracker#acceptance-criteria)
-5. [Mock-Up Preview](https://github.com/Brondchux/hw18-fitness-tracker#mock-up-preview)
-6. [Useful Links](https://github.com/Brondchux/hw18-fitness-tracker#useful-links)
-7. [Tech Stack](https://github.com/Brondchux/hw18-fitness-tracker#tech-stack)
-8. [Credits](https://github.com/Brondchux/hw18-fitness-tracker#credits)
-9. [License](https://github.com/Brondchux/hw18-fitness-tracker#license)
+1. [Project Description](https://github.com/Brondchux/hw19-progressive-budget#project-description)
+2. [Author Info](https://github.com/Brondchux/hw19-progressive-budget#author-info)
+3. [User Story](https://github.com/Brondchux/hw19-progressive-budget#user-story)
+4. [Acceptance Criteria](https://github.com/Brondchux/hw19-progressive-budget#acceptance-criteria)
+5. [Mock-Up Preview](https://github.com/Brondchux/hw19-progressive-budget#mock-up-preview)
+6. [Useful Links](https://github.com/Brondchux/hw19-progressive-budget#useful-links)
+7. [Tech Stack](https://github.com/Brondchux/hw19-progressive-budget#tech-stack)
+8. [Credits](https://github.com/Brondchux/hw19-progressive-budget#credits)
+9. [License](https://github.com/Brondchux/hw19-progressive-budget#license)
 
 ---
 
@@ -60,8 +60,8 @@ The following photo shows a preview of the application when deployed
 
 ## Useful Links
 
-1. 🗂 [Click me to view github repository for this project](https://github.com/Brondchux/hw18-fitness-tracker/)
-2. 🌍 [Click me to view deployed application via heroku](https://live-hw18-fitness-tracker.herokuapp.com/)
+1. 🗂 [Click me to view github repository for this project](https://github.com/Brondchux/hw19-progressive-budget/)
+2. 🌍 [Click me to view deployed application via heroku](https://live-hw19-progressive-budget.herokuapp.com/)
 
 ---
 
