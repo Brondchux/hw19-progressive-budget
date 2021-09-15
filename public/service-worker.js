@@ -1,4 +1,3 @@
-console.log("Service worker registered and ready for action");
 const CACHE_NAME = "budget-static-files-v1";
 const DATA_CACHE_NAME = "budget-data-files-v1";
 
@@ -13,12 +12,6 @@ const STATIC_FILES_TO_CACHE = [
 	"/assets/icons/icon-512x512.png",
 ];
 
-const DATA_FILES_TO_CACHE = [
-	"/api/transaction",
-	"/api/transaction/bulk",
-	"/api/transaction",
-];
-
 // add files to cache
 self.addEventListener("install", function (event) {
 	// add static files
@@ -31,7 +24,7 @@ self.addEventListener("install", function (event) {
 	// add data files
 	event.waitUntil(
 		caches.open(DATA_CACHE_NAME).then(function (cache) {
-			return cache.addAll(DATA_FILES_TO_CACHE);
+			cache.add("/api/transaction");
 		})
 	);
 });
