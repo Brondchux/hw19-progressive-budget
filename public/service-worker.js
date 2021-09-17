@@ -6,6 +6,7 @@ const STATIC_FILES_TO_CACHE = [
 	"/index.html",
 	"/manifest.json",
 	"/service-worker.js",
+	"/assets/js/db.js",
 	"/assets/js/index.js",
 	"/assets/css/styles.css",
 	"/assets/icons/icon-192x192.png",
